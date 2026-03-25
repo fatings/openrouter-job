@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current.json data/previous.json data/diff.json
+          git add -A data
           git diff --cached --quiet && exit 0
           ts="$(TZ=Europe/Lisbon date '+%Y-%m-%d %H:%M:%S %Z')"
           git commit -m "Update OpenRouter free models snapshot - ${ts}"
