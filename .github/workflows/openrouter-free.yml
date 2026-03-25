@@ -1,0 +1,36 @@
+name: Update OpenRouter free models
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 8 * * *"
+      timezone: "Europe/Lisbon"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run updater
+        run: python scripts/update_openrouter_free.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current.json data/previous.json data/diff.json
+          git diff --cached --quiet && exit 0
+          ts="$(TZ=Europe/Lisbon date '+%Y-%m-%d %H:%M:%S %Z')"
+          git commit -m "Update OpenRouter free models snapshot - ${ts}"
+          git push
