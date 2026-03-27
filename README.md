@@ -1,6 +1,6 @@
 # OpenRouter Free Models Tracker
 
-Monitorização diária dos modelos **free** do OpenRouter com GitHub Actions.
+Monitorização semanal dos modelos **free** do OpenRouter com GitHub Actions.
 
 O projeto gera snapshots automáticos da lista de modelos free e calcula as diferenças entre execuções, para ser fácil detetar:
 - Modelos adicionados.
@@ -10,7 +10,7 @@ O projeto gera snapshots automáticos da lista de modelos free e calcula as dife
 ## Objetivo
 
 Este repositório existe para:
-1. Obter diariamente a lista de modelos do OpenRouter.
+1. Obter semanalmente a lista de modelos do OpenRouter.
 2. Filtrar os modelos free.
 3. Guardar o estado atual e o estado anterior.
 4. Gerar um ficheiro de diff para análise manual ou leitura pelo Perplexity.
