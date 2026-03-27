@@ -6,12 +6,13 @@ O projeto gera snapshots automáticos da lista de modelos free e calcula as dife
 - Modelos adicionados.
 - Modelos removidos.
 - Total atual de modelos free.
+- Motivo pelo qual cada modelo foi considerado free.
 
 ## Objetivo
 
 Este repositório existe para:
 1. Obter semanalmente a lista de modelos do OpenRouter.
-2. Filtrar os modelos free.
+2. Classificar os modelos free com base no `id` e no `pricing`.
 3. Guardar o estado atual e o estado anterior.
 4. Gerar um ficheiro de diff para análise manual ou leitura pelo Perplexity.
 
