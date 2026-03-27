@@ -1,9 +1,68 @@
 {
-  "generated_at_utc": "2026-03-27T07:22:00Z",
-  "total_current": 26,
-  "added_count": 0,
+  "generated_at_utc": "2026-03-27T08:21:27Z",
+  "detection_policy": {
+    "free_if": [
+      "id endswith ':free' and all parsed pricing fields are zero",
+      "id endswith ':free' and core pricing fields present are zero",
+      "all parsed pricing fields are zero even without ':free'",
+      "core pricing fields present are zero even without ':free'"
+    ],
+    "not_free_if": [
+      "id endswith ':free' but any parsed pricing field is non-zero",
+      "no ':free' suffix and parsed pricing is non-zero",
+      "':free' suffix exists but pricing is missing"
+    ]
+  },
+  "total_current": 27,
+  "added_count": 1,
   "removed_count": 0,
-  "added": [],
+  "free_reason_counts": {
+    "suffix_and_all_zero_pricing": 26,
+    "all_zero_pricing_only": 1
+  },
+  "added": [
+    {
+      "id": "openrouter/free",
+      "name": "Free Models Router",
+      "canonical_slug": "openrouter/free",
+      "created": 1769917427,
+      "context_length": 200000,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": null,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "all_zero_pricing_only",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
   "removed": [],
   "all_current_ids": [
     "arcee-ai/trinity-large-preview:free",
@@ -27,6 +86,7 @@
     "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-120b:free",
     "openai/gpt-oss-20b:free",
+    "openrouter/free",
     "qwen/qwen3-4b:free",
     "qwen/qwen3-coder:free",
     "qwen/qwen3-next-80b-a3b-instruct:free",

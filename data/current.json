@@ -3,7 +3,17 @@
     "id": "arcee-ai/trinity-large-preview:free",
     "name": "Arcee AI: Trinity Large Preview (free)",
     "canonical_slug": "arcee-ai/trinity-large-preview",
+    "created": 1769552670,
     "context_length": 131000,
+    "supported_parameters": [
+      "max_tokens",
+      "response_format",
+      "structured_outputs",
+      "temperature",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0",
@@ -16,13 +26,37 @@
       "context_length": 131000,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "image",
+      "internal_reasoning",
+      "prompt",
+      "request",
+      "web_search"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "arcee-ai/trinity-mini:free",
     "name": "Arcee AI: Trinity Mini (free)",
     "canonical_slug": "arcee-ai/trinity-mini-20251201",
+    "created": 1764601720,
     "context_length": 131072,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -31,13 +65,32 @@
       "context_length": 131072,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "name": "Venice: Uncensored (free)",
     "canonical_slug": "venice/uncensored",
+    "created": 1752094966,
     "context_length": 32768,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -46,13 +99,28 @@
       "context_length": 32768,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "google/gemma-3-12b-it:free",
     "name": "Google: Gemma 3 12B (free)",
     "canonical_slug": "google/gemma-3-12b-it",
+    "created": 1741902625,
     "context_length": 32768,
+    "supported_parameters": [
+      "max_tokens",
+      "seed",
+      "stop",
+      "temperature",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -61,13 +129,29 @@
       "context_length": 32768,
       "max_completion_tokens": 8192,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "google/gemma-3-27b-it:free",
     "name": "Google: Gemma 3 27B (free)",
     "canonical_slug": "google/gemma-3-27b-it",
+    "created": 1741756359,
     "context_length": 131072,
+    "supported_parameters": [
+      "max_tokens",
+      "response_format",
+      "seed",
+      "stop",
+      "temperature",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -76,13 +160,29 @@
       "context_length": 131072,
       "max_completion_tokens": 8192,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "google/gemma-3-4b-it:free",
     "name": "Google: Gemma 3 4B (free)",
     "canonical_slug": "google/gemma-3-4b-it",
+    "created": 1741905510,
     "context_length": 32768,
+    "supported_parameters": [
+      "max_tokens",
+      "response_format",
+      "seed",
+      "stop",
+      "temperature",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -91,13 +191,28 @@
       "context_length": 32768,
       "max_completion_tokens": 8192,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "google/gemma-3n-e2b-it:free",
     "name": "Google: Gemma 3n 2B (free)",
     "canonical_slug": "google/gemma-3n-e2b-it",
+    "created": 1752074904,
     "context_length": 8192,
+    "supported_parameters": [
+      "max_tokens",
+      "response_format",
+      "seed",
+      "temperature",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -106,13 +221,28 @@
       "context_length": 8192,
       "max_completion_tokens": 2048,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "google/gemma-3n-e4b-it:free",
     "name": "Google: Gemma 3n 4B (free)",
     "canonical_slug": "google/gemma-3n-e4b-it",
+    "created": 1747776824,
     "context_length": 8192,
+    "supported_parameters": [
+      "max_tokens",
+      "response_format",
+      "seed",
+      "temperature",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -121,13 +251,33 @@
       "context_length": 8192,
       "max_completion_tokens": 2048,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "liquid/lfm-2.5-1.2b-instruct:free",
     "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)",
     "canonical_slug": "liquid/lfm-2.5-1.2b-instruct-20260120",
+    "created": 1768927521,
     "context_length": 32768,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -136,13 +286,35 @@
       "context_length": 32768,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "liquid/lfm-2.5-1.2b-thinking:free",
     "name": "LiquidAI: LFM2.5-1.2B-Thinking (free)",
     "canonical_slug": "liquid/lfm-2.5-1.2b-thinking-20260120",
+    "created": 1768927527,
     "context_length": 32768,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -151,13 +323,30 @@
       "context_length": 32768,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "meta-llama/llama-3.2-3b-instruct:free",
     "name": "Meta: Llama 3.2 3B Instruct (free)",
     "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
+    "created": 1727222400,
     "context_length": 131072,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "stop",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -166,13 +355,32 @@
       "context_length": 131072,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "meta-llama/llama-3.3-70b-instruct:free",
     "name": "Meta: Llama 3.3 70B Instruct (free)",
     "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
+    "created": 1733506137,
     "context_length": 65536,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -181,13 +389,31 @@
       "context_length": 65536,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "minimax/minimax-m2.5:free",
     "name": "MiniMax: MiniMax M2.5 (free)",
     "canonical_slug": "minimax/minimax-m2.5-20260211",
+    "created": 1770908502,
     "context_length": 196608,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "temperature",
+      "tools"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -196,13 +422,34 @@
       "context_length": 196608,
       "max_completion_tokens": 196608,
       "is_moderated": true
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "mistralai/mistral-small-3.1-24b-instruct:free",
     "name": "Mistral: Mistral Small 3.1 24B (free)",
     "canonical_slug": "mistralai/mistral-small-3.1-24b-instruct-2503",
+    "created": 1742238937,
     "context_length": 128000,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -211,13 +458,30 @@
       "context_length": 128000,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "nousresearch/hermes-3-llama-3.1-405b:free",
     "name": "Nous: Hermes 3 405B Instruct (free)",
     "canonical_slug": "nousresearch/hermes-3-llama-3.1-405b",
+    "created": 1723766400,
     "context_length": 131072,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "stop",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -226,13 +490,31 @@
       "context_length": 131072,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "nvidia/nemotron-3-nano-30b-a3b:free",
     "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
     "canonical_slug": "nvidia/nemotron-3-nano-30b-a3b",
+    "created": 1765731275,
     "context_length": 256000,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -241,13 +523,33 @@
       "context_length": 256000,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "nvidia/nemotron-3-super-120b-a12b:free",
     "name": "NVIDIA: Nemotron 3 Super (free)",
     "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
+    "created": 1773245239,
     "context_length": 262144,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -256,13 +558,31 @@
       "context_length": 262144,
       "max_completion_tokens": 262144,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "nvidia/nemotron-nano-12b-v2-vl:free",
     "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
     "canonical_slug": "nvidia/nemotron-nano-12b-v2-vl",
+    "created": 1761675565,
     "context_length": 128000,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -271,13 +591,33 @@
       "context_length": 128000,
       "max_completion_tokens": 128000,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "nvidia/nemotron-nano-9b-v2:free",
     "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
     "canonical_slug": "nvidia/nemotron-nano-9b-v2",
+    "created": 1757106807,
     "context_length": 128000,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -286,13 +626,31 @@
       "context_length": 128000,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "openai/gpt-oss-120b:free",
     "name": "OpenAI: gpt-oss-120b (free)",
     "canonical_slug": "openai/gpt-oss-120b",
+    "created": 1754414231,
     "context_length": 131072,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -301,13 +659,31 @@
       "context_length": 131072,
       "max_completion_tokens": 131072,
       "is_moderated": true
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "openai/gpt-oss-20b:free",
     "name": "OpenAI: gpt-oss-20b (free)",
     "canonical_slug": "openai/gpt-oss-20b",
+    "created": 1754414229,
     "context_length": 131072,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -316,13 +692,77 @@
       "context_length": 131072,
       "max_completion_tokens": 131072,
       "is_moderated": true
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "openrouter/free",
+    "name": "Free Models Router",
+    "canonical_slug": "openrouter/free",
+    "created": 1769917427,
+    "context_length": 200000,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": null,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "all_zero_pricing_only",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "qwen/qwen3-4b:free",
     "name": "Qwen: Qwen3 4B (free)",
     "canonical_slug": "qwen/qwen3-4b-04-28",
+    "created": 1746031104,
     "context_length": 40960,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -331,13 +771,32 @@
       "context_length": 40960,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "qwen/qwen3-coder:free",
     "name": "Qwen: Qwen3 Coder 480B A35B (free)",
     "canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
+    "created": 1753230546,
     "context_length": 262000,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -346,13 +805,34 @@
       "context_length": 262000,
       "max_completion_tokens": 262000,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "qwen/qwen3-next-80b-a3b-instruct:free",
     "name": "Qwen: Qwen3 Next 80B A3B Instruct (free)",
     "canonical_slug": "qwen/qwen3-next-80b-a3b-instruct-2509",
+    "created": 1757612213,
     "context_length": 262144,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -361,13 +841,31 @@
       "context_length": 262144,
       "max_completion_tokens": null,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "stepfun/step-3.5-flash:free",
     "name": "StepFun: Step 3.5 Flash (free)",
     "canonical_slug": "stepfun/step-3.5-flash",
+    "created": 1769728337,
     "context_length": 256000,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "stop",
+      "temperature",
+      "tools",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -376,13 +874,30 @@
       "context_length": 256000,
       "max_completion_tokens": 256000,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   },
   {
     "id": "z-ai/glm-4.5-air:free",
     "name": "Z.ai: GLM 4.5 Air (free)",
     "canonical_slug": "z-ai/glm-4.5-air",
+    "created": 1753471258,
     "context_length": 131072,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
     "pricing": {
       "prompt": "0",
       "completion": "0"
@@ -391,6 +906,13 @@
       "context_length": 131072,
       "max_completion_tokens": 96000,
       "is_moderated": false
-    }
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
   }
 ]
