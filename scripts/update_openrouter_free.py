@@ -25,8 +25,6 @@ PRICING_FIELDS = [
     "input_cache_write",
 ]
 
-CORE_PRICING_FIELDS = ["prompt", "completion", "request"]
-
 
 def fetch_models():
     req = Request(API_URL, headers={"User-Agent": "github-actions-openrouter-check"})
@@ -56,9 +54,6 @@ def analyse_pricing(pricing):
     has_pricing = len(parsed) > 0
     zero_fields = sorted([k for k, v in parsed.items() if v == 0])
     non_zero_fields = sorted([k for k, v in parsed.items() if v != 0])
-
-    core_present = [k for k in CORE_PRICING_FIELDS if k in parsed]
-    core_zero = len(core_present) > 0 and all(parsed[k] == 0 for k in core_present)
     all_zero = has_pricing and all(v == 0 for v in parsed.values())
 
     return {
@@ -66,8 +61,6 @@ def analyse_pricing(pricing):
         "parsed": parsed,
         "zero_fields": zero_fields,
         "non_zero_fields": non_zero_fields,
-        "core_present": core_present,
-        "core_zero": core_zero,
         "all_zero": all_zero,
     }
 
@@ -77,28 +70,17 @@ def classify_free(model):
     suffix_free = model_id.endswith(":free")
     pricing = analyse_pricing(model.get("pricing"))
 
-    if suffix_free and pricing["all_zero"]:
-        return True, "suffix_and_all_zero_pricing"
+    # Only models with the :free suffix are considered free.
+    if not suffix_free:
+        return False, "no_free_suffix"
 
-    if suffix_free and pricing["core_zero"]:
-        return True, "suffix_and_core_zero_pricing"
-
-    if not suffix_free and pricing["all_zero"]:
-        return True, "all_zero_pricing_only"
-
-    if not suffix_free and pricing["core_zero"]:
-        return True, "core_zero_pricing_only"
-
-    if suffix_free and pricing["non_zero_fields"]:
-        return False, "suffix_but_nonzero_pricing:" + ",".join(pricing["non_zero_fields"])
-
-    if suffix_free and not pricing["has_pricing"]:
+    if not pricing["has_pricing"]:
         return False, "suffix_but_no_pricing"
 
-    if not suffix_free and pricing["non_zero_fields"]:
-        return False, "nonzero_pricing:" + ",".join(pricing["non_zero_fields"])
+    if pricing["non_zero_fields"]:
+        return False, "suffix_but_nonzero_pricing:" + ",".join(pricing["non_zero_fields"])
 
-    return False, "no_free_suffix_and_no_zero_pricing"
+    return True, "suffix_and_all_zero_pricing"
 
 
 def normalize(model):
@@ -163,14 +145,11 @@ diff_payload = {
     "detection_policy": {
         "free_if": [
             "id endswith ':free' and all parsed pricing fields are zero",
-            "id endswith ':free' and core pricing fields present are zero",
-            "all parsed pricing fields are zero even without ':free'",
-            "core pricing fields present are zero even without ':free'",
         ],
         "not_free_if": [
+            "id does not end with ':free'",
             "id endswith ':free' but any parsed pricing field is non-zero",
-            "no ':free' suffix and parsed pricing is non-zero",
-            "':free' suffix exists but pricing is missing",
+            "id endswith ':free' but pricing is missing",
         ],
     },
     "total_current": len(free_models),
