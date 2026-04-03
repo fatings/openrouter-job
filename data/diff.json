@@ -1,26 +1,23 @@
 {
-  "generated_at_utc": "2026-04-03T06:16:09Z",
+  "generated_at_utc": "2026-04-03T08:03:44Z",
   "detection_policy": {
     "free_if": [
-      "id endswith ':free' and all parsed pricing fields are zero",
-      "id endswith ':free' and core pricing fields present are zero",
-      "all parsed pricing fields are zero even without ':free'",
-      "core pricing fields present are zero even without ':free'"
+      "id endswith ':free' and all parsed pricing fields are zero"
     ],
     "not_free_if": [
+      "id does not end with ':free'",
       "id endswith ':free' but any parsed pricing field is non-zero",
-      "no ':free' suffix and parsed pricing is non-zero",
-      "':free' suffix exists but pricing is missing"
+      "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 28,
-  "added_count": 3,
-  "removed_count": 2,
+  "total_current": 25,
+  "added_count": 0,
+  "removed_count": 3,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 25,
-    "all_zero_pricing_only": 3
+    "suffix_and_all_zero_pricing": 25
   },
-  "added": [
+  "added": [],
+  "removed": [
     {
       "id": "google/lyria-3-clip-preview",
       "name": "Google: Lyria 3 Clip Preview",
@@ -82,54 +79,21 @@
       "pricing_non_zero_fields": []
     },
     {
-      "id": "qwen/qwen3.6-plus:free",
-      "name": "Qwen: Qwen3.6 Plus (free)",
-      "canonical_slug": "qwen/qwen3.6-plus-04-02",
-      "created": 1775133557,
-      "context_length": 1000000,
+      "id": "openrouter/free",
+      "name": "Free Models Router",
+      "canonical_slug": "openrouter/free",
+      "created": 1769917427,
+      "context_length": 200000,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
         "seed",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 65536,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
-  "removed": [
-    {
-      "id": "mistralai/mistral-small-3.1-24b-instruct:free",
-      "name": "Mistral: Mistral Small 3.1 24B (free)",
-      "canonical_slug": "mistralai/mistral-small-3.1-24b-instruct-2503",
-      "created": 1742238937,
-      "context_length": 128000,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
         "stop",
         "structured_outputs",
         "temperature",
@@ -143,50 +107,12 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 128000,
+        "context_length": null,
         "max_completion_tokens": null,
         "is_moderated": false
       },
       "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "qwen/qwen3-4b:free",
-      "name": "Qwen: Qwen3 4B (free)",
-      "canonical_slug": "qwen/qwen3-4b-04-28",
-      "created": 1746031104,
-      "context_length": 40960,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 40960,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
+      "free_reason": "all_zero_pricing_only",
       "pricing_zero_fields": [
         "completion",
         "prompt"
@@ -203,8 +129,6 @@
     "google/gemma-3-4b-it:free",
     "google/gemma-3n-e2b-it:free",
     "google/gemma-3n-e4b-it:free",
-    "google/lyria-3-clip-preview",
-    "google/lyria-3-pro-preview",
     "liquid/lfm-2.5-1.2b-instruct:free",
     "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
@@ -217,7 +141,6 @@
     "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-120b:free",
     "openai/gpt-oss-20b:free",
-    "openrouter/free",
     "qwen/qwen3-coder:free",
     "qwen/qwen3-next-80b-a3b-instruct:free",
     "qwen/qwen3.6-plus:free",

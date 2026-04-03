@@ -253,66 +253,6 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "google/lyria-3-clip-preview",
-    "name": "Google: Lyria 3 Clip Preview",
-    "canonical_slug": "google/lyria-3-clip-preview-20260330",
-    "created": 1774907255,
-    "context_length": 1048576,
-    "supported_parameters": [
-      "max_tokens",
-      "response_format",
-      "seed",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 1048576,
-      "max_completion_tokens": 65536,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "all_zero_pricing_only",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "google/lyria-3-pro-preview",
-    "name": "Google: Lyria 3 Pro Preview",
-    "canonical_slug": "google/lyria-3-pro-preview-20260330",
-    "created": 1774907286,
-    "context_length": 1048576,
-    "supported_parameters": [
-      "max_tokens",
-      "response_format",
-      "seed",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 1048576,
-      "max_completion_tokens": 65536,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "all_zero_pricing_only",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "liquid/lfm-2.5-1.2b-instruct:free",
     "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)",
     "canonical_slug": "liquid/lfm-2.5-1.2b-instruct-20260120",
@@ -711,47 +651,6 @@
     },
     "is_free": true,
     "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "openrouter/free",
-    "name": "Free Models Router",
-    "canonical_slug": "openrouter/free",
-    "created": 1769917427,
-    "context_length": 200000,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "min_p",
-      "presence_penalty",
-      "reasoning",
-      "repetition_penalty",
-      "response_format",
-      "seed",
-      "stop",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": null,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "all_zero_pricing_only",
     "pricing_zero_fields": [
       "completion",
       "prompt"
