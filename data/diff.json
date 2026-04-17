@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-10T06:57:07Z",
+  "generated_at_utc": "2026-04-17T07:01:24Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,28 +10,23 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 24,
-  "added_count": 2,
-  "removed_count": 3,
+  "total_current": 25,
+  "added_count": 1,
+  "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 24
+    "suffix_and_all_zero_pricing": 25
   },
   "added": [
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "name": "Google: Gemma 4 26B A4B  (free)",
-      "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
-      "created": 1775227989,
-      "context_length": 262144,
+      "id": "meta-llama/llama-guard-4-12b:free",
+      "name": "Meta: Llama Guard 4 12B (free)",
+      "canonical_slug": "meta-llama/llama-guard-4-12b",
+      "created": 1745975193,
+      "context_length": 163840,
       "supported_parameters": [
-        "include_reasoning",
         "max_tokens",
-        "reasoning",
-        "response_format",
         "seed",
         "temperature",
-        "tool_choice",
-        "tools",
         "top_p"
       ],
       "pricing": {
@@ -39,42 +34,8 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "google/gemma-4-31b-it:free",
-      "name": "Google: Gemma 4 31B (free)",
-      "canonical_slug": "google/gemma-4-31b-it-20260402",
-      "created": 1775148486,
-      "context_length": 262144,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
+        "context_length": 163840,
+        "max_completion_tokens": 65000,
         "is_moderated": false
       },
       "is_free": true,
@@ -86,112 +47,7 @@
       "pricing_non_zero_fields": []
     }
   ],
-  "removed": [
-    {
-      "id": "arcee-ai/trinity-mini:free",
-      "name": "Arcee AI: Trinity Mini (free)",
-      "canonical_slug": "arcee-ai/trinity-mini-20251201",
-      "created": 1764601720,
-      "context_length": 131072,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "qwen/qwen3.6-plus:free",
-      "name": "Qwen: Qwen3.6 Plus (free)",
-      "canonical_slug": "qwen/qwen3.6-plus-04-02",
-      "created": 1775133557,
-      "context_length": 1000000,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 65536,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "stepfun/step-3.5-flash:free",
-      "name": "StepFun: Step 3.5 Flash (free)",
-      "canonical_slug": "stepfun/step-3.5-flash",
-      "created": 1769728337,
-      "context_length": 256000,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "stop",
-        "temperature",
-        "tools",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 256000,
-        "max_completion_tokens": 256000,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
+  "removed": [],
   "all_current_ids": [
     "arcee-ai/trinity-large-preview:free",
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
@@ -206,6 +62,7 @@
     "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
     "meta-llama/llama-3.3-70b-instruct:free",
+    "meta-llama/llama-guard-4-12b:free",
     "minimax/minimax-m2.5:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
