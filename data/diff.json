@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-24T07:07:42Z",
+  "generated_at_utc": "2026-05-01T03:35:34Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,29 +10,27 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 27,
-  "added_count": 4,
-  "removed_count": 2,
+  "total_current": 29,
+  "added_count": 3,
+  "removed_count": 1,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 27
+    "suffix_and_all_zero_pricing": 29
   },
   "added": [
     {
-      "id": "baidu/qianfan-ocr-fast:free",
-      "name": "Baidu: Qianfan-OCR-Fast (free)",
-      "canonical_slug": "baidu/qianfan-ocr-fast-20260420",
-      "created": 1776707472,
-      "context_length": 65536,
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+      "canonical_slug": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428",
+      "created": 1777393095,
+      "context_length": 256000,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "seed",
-        "stop",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_p"
       ],
       "pricing": {
@@ -40,8 +38,8 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 65536,
-        "max_completion_tokens": 28672,
+        "context_length": 256000,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "is_free": true,
@@ -53,33 +51,26 @@
       "pricing_non_zero_fields": []
     },
     {
-      "id": "inclusionai/ling-2.6-1t:free",
-      "name": "inclusionAI: Ling-2.6-1T (free)",
-      "canonical_slug": "inclusionai/ling-2.6-1t-20260423",
-      "created": 1776948238,
-      "context_length": 262144,
+      "id": "poolside/laguna-m.1:free",
+      "name": "Poolside: Laguna M.1 (free)",
+      "canonical_slug": "poolside/laguna-m.1-20260312",
+      "created": 1777388504,
+      "context_length": 131072,
       "supported_parameters": [
-        "frequency_penalty",
+        "include_reasoning",
         "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
+        "reasoning",
         "temperature",
         "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
+        "tools"
       ],
       "pricing": {
         "prompt": "0",
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
+        "context_length": 131072,
+        "max_completion_tokens": 8192,
         "is_moderated": false
       },
       "is_free": true,
@@ -90,6 +81,39 @@
       ],
       "pricing_non_zero_fields": []
     },
+    {
+      "id": "poolside/laguna-xs.2:free",
+      "name": "Poolside: Laguna XS.2 (free)",
+      "canonical_slug": "poolside/laguna-xs.2-20260421",
+      "created": 1777389604,
+      "context_length": 131072,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": 8192,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
+  "removed": [
     {
       "id": "inclusionai/ling-2.6-flash:free",
       "name": "inclusionAI: Ling-2.6-flash (free)",
@@ -127,104 +151,6 @@
         "prompt"
       ],
       "pricing_non_zero_fields": []
-    },
-    {
-      "id": "tencent/hy3-preview:free",
-      "name": "Tencent: Hy3 preview (free)",
-      "canonical_slug": "tencent/hy3-preview-20260421",
-      "created": 1776878150,
-      "context_length": 262144,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "presence_penalty",
-        "reasoning",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 262144,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
-  "removed": [
-    {
-      "id": "arcee-ai/trinity-large-preview:free",
-      "name": "Arcee AI: Trinity Large Preview (free)",
-      "canonical_slug": "arcee-ai/trinity-large-preview",
-      "created": 1769552670,
-      "context_length": 131000,
-      "supported_parameters": [
-        "max_tokens",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 131000,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "meta-llama/llama-guard-4-12b:free",
-      "name": "Meta: Llama Guard 4 12B (free)",
-      "canonical_slug": "meta-llama/llama-guard-4-12b",
-      "created": 1745975193,
-      "context_length": 163840,
-      "supported_parameters": [
-        "max_tokens",
-        "seed",
-        "temperature",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 163840,
-        "max_completion_tokens": 65000,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
     }
   ],
   "all_current_ids": [
@@ -238,7 +164,6 @@
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
     "inclusionai/ling-2.6-1t:free",
-    "inclusionai/ling-2.6-flash:free",
     "liquid/lfm-2.5-1.2b-instruct:free",
     "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
@@ -246,11 +171,14 @@
     "minimax/minimax-m2.5:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-super-120b-a12b:free",
     "nvidia/nemotron-nano-12b-v2-vl:free",
     "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-120b:free",
     "openai/gpt-oss-20b:free",
+    "poolside/laguna-m.1:free",
+    "poolside/laguna-xs.2:free",
     "qwen/qwen3-coder:free",
     "qwen/qwen3-next-80b-a3b-instruct:free",
     "tencent/hy3-preview:free",
