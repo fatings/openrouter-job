@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-05T03:57:18Z",
+  "generated_at_utc": "2026-06-12T04:09:27Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,27 +10,31 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 23,
-  "added_count": 2,
+  "total_current": 22,
+  "added_count": 1,
   "removed_count": 2,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 23
+    "suffix_and_all_zero_pricing": 22
   },
   "added": [
     {
-      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "name": "NVIDIA: Nemotron 3 Ultra (free)",
-      "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-      "created": 1780551208,
-      "context_length": 1000000,
+      "id": "nex-agi/nex-n2-pro:free",
+      "name": "Nex AGI: Nex-N2-Pro (free)",
+      "canonical_slug": "nex-agi/nex-n2-pro",
+      "created": 1780937140,
+      "context_length": 262144,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "reasoning",
-        "seed",
+        "response_format",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "pricing": {
@@ -38,39 +42,8 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 65536,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "nvidia/nemotron-3.5-content-safety:free",
-      "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-      "canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
-      "created": 1780581864,
-      "context_length": 128000,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "seed",
-        "temperature",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": 8192,
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "is_free": true,
@@ -84,11 +57,11 @@
   ],
   "removed": [
     {
-      "id": "deepseek/deepseek-v4-flash:free",
-      "name": "DeepSeek: DeepSeek V4 Flash (free)",
-      "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
-      "created": 1777000666,
-      "context_length": 1048576,
+      "id": "moonshotai/kimi-k2.6:free",
+      "name": "MoonshotAI: Kimi K2.6 (free)",
+      "canonical_slug": "moonshotai/kimi-k2.6-20260420",
+      "created": 1776699402,
+      "context_length": 262144,
       "supported_parameters": [
         "include_reasoning",
         "reasoning",
@@ -100,8 +73,8 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 384000,
+        "context_length": 262144,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "is_free": true,
@@ -113,29 +86,28 @@
       "pricing_non_zero_fields": []
     },
     {
-      "id": "minimax/minimax-m2.5:free",
-      "name": "MiniMax: MiniMax M2.5 (free)",
-      "canonical_slug": "minimax/minimax-m2.5-20260211",
-      "created": 1770908502,
-      "context_length": 204800,
+      "id": "z-ai/glm-4.5-air:free",
+      "name": "Z.ai: GLM 4.5 Air (free)",
+      "canonical_slug": "z-ai/glm-4.5-air",
+      "created": 1753471258,
+      "context_length": 131072,
       "supported_parameters": [
         "include_reasoning",
         "max_tokens",
         "reasoning",
-        "response_format",
-        "seed",
-        "stop",
         "temperature",
-        "tools"
+        "tool_choice",
+        "tools",
+        "top_p"
       ],
       "pricing": {
         "prompt": "0",
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 196608,
-        "max_completion_tokens": 8192,
-        "is_moderated": true
+        "context_length": 131072,
+        "max_completion_tokens": 96000,
+        "is_moderated": false
       },
       "is_free": true,
       "free_reason": "suffix_and_all_zero_pricing",
@@ -154,7 +126,7 @@
     "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
     "meta-llama/llama-3.3-70b-instruct:free",
-    "moonshotai/kimi-k2.6:free",
+    "nex-agi/nex-n2-pro:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -168,7 +140,6 @@
     "poolside/laguna-m.1:free",
     "poolside/laguna-xs.2:free",
     "qwen/qwen3-coder:free",
-    "qwen/qwen3-next-80b-a3b-instruct:free",
-    "z-ai/glm-4.5-air:free"
+    "qwen/qwen3-next-80b-a3b-instruct:free"
   ]
 }

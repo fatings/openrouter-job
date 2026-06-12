@@ -34,35 +34,6 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "deepseek/deepseek-v4-flash:free",
-    "name": "DeepSeek: DeepSeek V4 Flash (free)",
-    "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
-    "created": 1777000666,
-    "context_length": 1048576,
-    "supported_parameters": [
-      "include_reasoning",
-      "reasoning",
-      "tool_choice",
-      "tools"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 1048576,
-      "max_completion_tokens": 384000,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "google/gemma-4-26b-a4b-it:free",
     "name": "Google: Gemma 4 26B A4B  (free)",
     "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
@@ -270,39 +241,6 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "minimax/minimax-m2.5:free",
-    "name": "MiniMax: MiniMax M2.5 (free)",
-    "canonical_slug": "minimax/minimax-m2.5-20260211",
-    "created": 1770908502,
-    "context_length": 204800,
-    "supported_parameters": [
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "response_format",
-      "seed",
-      "stop",
-      "temperature",
-      "tools"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 196608,
-      "max_completion_tokens": 8192,
-      "is_moderated": true
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "moonshotai/kimi-k2.6:free",
     "name": "MoonshotAI: Kimi K2.6 (free)",
     "canonical_slug": "moonshotai/kimi-k2.6-20260420",
@@ -454,6 +392,70 @@
     "top_provider": {
       "context_length": 262144,
       "max_completion_tokens": 262144,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "name": "NVIDIA: Nemotron 3 Ultra (free)",
+    "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+    "created": 1780551208,
+    "context_length": 1000000,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "nvidia/nemotron-3.5-content-safety:free",
+    "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+    "canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
+    "created": 1780581864,
+    "context_length": 128000,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "temperature",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 8192,
       "is_moderated": false
     },
     "is_free": true,
