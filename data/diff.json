@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-07T02:43:07Z",
+  "generated_at_utc": "2026-08-14T02:02:19Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,13 +10,92 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 14,
-  "added_count": 1,
+  "total_current": 15,
+  "added_count": 2,
   "removed_count": 1,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 14
+    "suffix_and_all_zero_pricing": 15
   },
   "added": [
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "name": "LiquidAI: LFM2.5-2.6B (free)",
+      "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
+      "created": 1786470519,
+      "context_length": 128000,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 128000,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning:free",
+      "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+      "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
+      "created": 1786452751,
+      "context_length": 1000000,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 65536,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
+  "removed": [
     {
       "id": "inclusionai/ling-3.0-tiny:free",
       "name": "inclusionAI: Ling 3.0 Tiny (free)",
@@ -58,58 +137,17 @@
       "pricing_non_zero_fields": []
     }
   ],
-  "removed": [
-    {
-      "id": "inclusionai/ling-3.0-flash:free",
-      "name": "Ling-3.0-flash (free)",
-      "canonical_slug": "inclusionai/ling-3.0-flash-20260723",
-      "created": 1784818580,
-      "context_length": 262144,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
   "all_current_ids": [
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
-    "inclusionai/ling-3.0-tiny:free",
+    "liquid/lfm-2.5-2.6b:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-super-120b-a12b:free",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3.5-content-safety:free",
+    "nvidia/nemotron-3.5-lightning:free",
     "nvidia/nemotron-nano-12b-v2-vl:free",
     "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-20b:free",

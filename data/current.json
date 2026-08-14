@@ -113,21 +113,25 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "inclusionai/ling-3.0-tiny:free",
-    "name": "inclusionAI: Ling 3.0 Tiny (free)",
-    "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
-    "created": 1786034890,
-    "context_length": 262144,
+    "id": "liquid/lfm-2.5-2.6b:free",
+    "name": "LiquidAI: LFM2.5-2.6B (free)",
+    "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
+    "created": 1786470519,
+    "context_length": 128000,
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
       "logprobs",
+      "max_completion_tokens",
       "max_tokens",
+      "min_p",
       "presence_penalty",
       "reasoning",
       "repetition_penalty",
+      "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -140,7 +144,7 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 262144,
+      "context_length": 128000,
       "max_completion_tokens": 32768,
       "is_moderated": false
     },
@@ -309,6 +313,39 @@
     "top_provider": {
       "context_length": 128000,
       "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "nvidia/nemotron-3.5-lightning:free",
+    "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+    "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
+    "created": 1786452751,
+    "context_length": 1000000,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 65536,
       "is_moderated": false
     },
     "is_free": true,
