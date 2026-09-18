@@ -140,9 +140,89 @@
   },
   {
     "id": "inclusionai/ling-3.0-flash-fin:free",
-    "name": "Ling 3.0 Flash Fin (free)",
+    "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
     "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
     "created": 1787846290,
+    "context_length": 262144,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "inclusionai/ling-3.0-flash-sante:free",
+    "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+    "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904",
+    "created": 1788545946,
+    "context_length": 262144,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "inclusionai/ling-3.0-flash-vl:free",
+    "name": "inclusionAI: Ling 3.0 Flash VL (free)",
+    "canonical_slug": "inclusionai/ling-3.0-flash-vl-20260910",
+    "created": 1789056114,
     "context_length": 262144,
     "supported_parameters": [
       "frequency_penalty",
@@ -223,20 +303,24 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "minimax/minimax-m2.7:free",
-    "name": "MiniMax: MiniMax M2.7 (free)",
-    "canonical_slug": "minimax/minimax-m2.7-20260318",
-    "created": 1773836697,
-    "context_length": 196608,
+    "id": "nex-agi/nex-n2.5-mini:free",
+    "name": "Nex AGI: Nex-N2.5-Mini (free)",
+    "canonical_slug": "nex-agi/nex-n2.5-mini-20260908",
+    "created": 1788890061,
+    "context_length": 262144,
     "supported_parameters": [
       "include_reasoning",
+      "logprobs",
       "max_tokens",
       "reasoning",
+      "reasoning_effort",
       "response_format",
-      "seed",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
+      "top_k",
+      "top_logprobs",
       "top_p"
     ],
     "pricing": {
@@ -244,8 +328,8 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 196608,
-      "max_completion_tokens": 176947,
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
       "is_moderated": false
     },
     "is_free": true,
@@ -257,20 +341,24 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "minimax/minimax-m3:free",
-    "name": "MiniMax: MiniMax M3 (free)",
-    "canonical_slug": "minimax/minimax-m3-20260531",
-    "created": 1780245374,
-    "context_length": 1048576,
+    "id": "nex-agi/nex-n2.5-pro:free",
+    "name": "Nex AGI: Nex-N2.5-Pro (free)",
+    "canonical_slug": "nex-agi/nex-n2.5-pro-20260907",
+    "created": 1788890050,
+    "context_length": 262144,
     "supported_parameters": [
       "include_reasoning",
+      "logprobs",
       "max_tokens",
       "reasoning",
+      "reasoning_effort",
       "response_format",
-      "seed",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
+      "top_k",
+      "top_logprobs",
       "top_p"
     ],
     "pricing": {
@@ -278,8 +366,8 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 1048576,
-      "max_completion_tokens": 943718,
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
       "is_moderated": false
     },
     "is_free": true,
@@ -581,48 +669,6 @@
     "top_provider": {
       "context_length": 1048576,
       "max_completion_tokens": 262144,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "z-ai/glm-5.2:free",
-    "name": "Z.ai: GLM 5.2 (free)",
-    "canonical_slug": "z-ai/glm-5.2-20260616",
-    "created": 1781631930,
-    "context_length": 256000,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "min_p",
-      "presence_penalty",
-      "reasoning",
-      "reasoning_effort",
-      "repetition_penalty",
-      "response_format",
-      "seed",
-      "stop",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 256000,
-      "max_completion_tokens": 230400,
       "is_moderated": false
     },
     "is_free": true,
