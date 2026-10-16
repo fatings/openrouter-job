@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-09T05:03:24Z",
+  "generated_at_utc": "2026-10-16T03:33:52Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -11,34 +11,28 @@
     ]
   },
   "total_current": 15,
-  "added_count": 0,
-  "removed_count": 2,
+  "added_count": 1,
+  "removed_count": 1,
   "free_reason_counts": {
     "suffix_and_all_zero_pricing": 15
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
-      "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904",
-      "created": 1788545946,
-      "context_length": 262144,
+      "id": "nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "canonical_slug": "nvidia/nemotron-3.5-super-vl-20261015",
+      "created": 1792076662,
+      "context_length": 1000000,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
+        "response_format",
         "seed",
-        "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "pricing": {
@@ -46,8 +40,8 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
+        "context_length": 1000000,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "is_free": true,
@@ -57,12 +51,14 @@
         "prompt"
       ],
       "pricing_non_zero_fields": []
-    },
+    }
+  ],
+  "removed": [
     {
-      "id": "qwen/qwen3.8-27b:free",
-      "name": "Qwen: Qwen3.8 27B (free)",
-      "canonical_slug": "qwen/qwen3.8-27b-20260814",
-      "created": 1786722910,
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "canonical_slug": "apodex/apodex-1.1-mini-20261001",
+      "created": 1790875335,
       "context_length": 262144,
       "supported_parameters": [
         "frequency_penalty",
@@ -70,13 +66,15 @@
         "max_tokens",
         "presence_penalty",
         "reasoning",
-        "reasoning_effort",
         "repetition_penalty",
+        "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "pricing": {
@@ -98,7 +96,6 @@
     }
   ],
   "all_current_ids": [
-    "apodex/apodex-1.1-mini:free",
     "cohere/north-mini-code:free",
     "dots-studio/dots-3-note-preview:free",
     "google/gemma-4-26b-a4b-it:free",
@@ -109,6 +106,7 @@
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3.5-content-safety:free",
     "nvidia/nemotron-3.5-lightning:free",
+    "nvidia/nemotron-3.5-super-vl:free",
     "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1:free",
     "thinkingmachines/inkling-small:free",
