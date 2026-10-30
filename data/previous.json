@@ -446,6 +446,42 @@
     "pricing_non_zero_fields": []
   },
   {
+    "id": "recursive/flint-v1.0:free",
+    "name": "Recursive: Flint (free)",
+    "canonical_slug": "recursive/flint-v1.0-20261021",
+    "created": 1792622765,
+    "context_length": 262144,
+    "supported_parameters": [
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "temperature",
+      "tools",
+      "top_logprobs",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
     "id": "thinkingmachines/inkling-small:free",
     "name": "Thinking Machines: Inkling Small (free)",
     "canonical_slug": "thinkingmachines/inkling-small-20260730",
@@ -507,6 +543,47 @@
     "top_provider": {
       "context_length": 1048576,
       "max_completion_tokens": 262144,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "xingchen-agi/xing4.0-29b-a4b:free",
+    "name": "XingChen: Xing4.0 29B A4B (free)",
+    "canonical_slug": "xingchen-agi/xing4.0-29b-a4b-20261015",
+    "created": 1792177496,
+    "context_length": 262144,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
       "is_moderated": false
     },
     "is_free": true,
