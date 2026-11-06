@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-30T06:51:17Z",
+  "generated_at_utc": "2026-11-06T07:44:07Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,30 +10,92 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 16,
+  "total_current": 12,
   "added_count": 0,
-  "removed_count": 1,
+  "removed_count": 4,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 16
+    "suffix_and_all_zero_pricing": 12
   },
   "added": [],
   "removed": [
     {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "name": "NVIDIA: Nemotron 3 Super (free)",
-      "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-      "created": 1773245239,
+      "id": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "canonical_slug": "poolside/laguna-s-2.1-20260720",
+      "created": 1784652683,
       "context_length": 262144,
       "supported_parameters": [
         "include_reasoning",
         "max_tokens",
         "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "seed",
-        "structured_outputs",
         "temperature",
         "tool_choice",
+        "tools"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "name": "Poolside: Laguna XS 2.1 (free)",
+      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
+      "created": 1783002429,
+      "context_length": 262144,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "thinkingmachines/inkling-small:free",
+      "name": "Thinking Machines: Inkling Small (free)",
+      "canonical_slug": "thinkingmachines/inkling-small-20260730",
+      "created": 1785443117,
+      "context_length": 1048576,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "stop",
+        "temperature",
         "tools",
         "top_p"
       ],
@@ -42,8 +104,44 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 235929,
+        "context_length": 1048576,
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "thinkingmachines/inkling:free",
+      "name": "Thinking Machines: Inkling (free)",
+      "canonical_slug": "thinkingmachines/inkling-20260715",
+      "created": 1784325956,
+      "context_length": 1048576,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "stop",
+        "temperature",
+        "tools",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "is_free": true,
@@ -66,11 +164,7 @@
     "nvidia/nemotron-3.5-content-safety:free",
     "nvidia/nemotron-3.5-lightning:free",
     "nvidia/nemotron-3.5-super-vl:free",
-    "poolside/laguna-s-2.1:free",
-    "poolside/laguna-xs-2.1:free",
     "recursive/flint-v1.0:free",
-    "thinkingmachines/inkling-small:free",
-    "thinkingmachines/inkling:free",
     "xingchen-agi/xing4.0-29b-a4b:free"
   ]
 }
