@@ -1,5 +1,79 @@
 [
   {
+    "id": "apodex/apodex-1.1-mini:free",
+    "name": "Apodex: Apodex 1.1 Mini (free)",
+    "canonical_slug": "apodex/apodex-1.1-mini-20261001",
+    "created": 1790875335,
+    "context_length": 262144,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "baidu/ernie-5.5-flash-preview:free",
+    "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+    "canonical_slug": "baidu/ernie-5.5-flash-preview-20261110",
+    "created": 1794333533,
+    "context_length": 1024000,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 1024000,
+      "max_completion_tokens": 921600,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
     "id": "cohere/north-mini-code:free",
     "name": "Cohere: North Mini Code (free)",
     "canonical_slug": "cohere/north-mini-code-20260617",
@@ -183,6 +257,50 @@
     "pricing_non_zero_fields": []
   },
   {
+    "id": "liquid/lfm-3-1.7b:free",
+    "name": "LiquidAI: LFM3-1.7B (free)",
+    "canonical_slug": "liquid/lfm-3-1.7b-20261106",
+    "created": 1794009477,
+    "context_length": 262144,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_completion_tokens",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
     "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
     "canonical_slug": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428",
@@ -239,37 +357,6 @@
     "top_provider": {
       "context_length": 1000000,
       "max_completion_tokens": 65536,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "nvidia/nemotron-3.5-content-safety:free",
-    "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-    "canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
-    "created": 1780581864,
-    "context_length": 128000,
-    "supported_parameters": [
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "seed",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 8192,
       "is_moderated": false
     },
     "is_free": true,
@@ -349,6 +436,50 @@
     "pricing_non_zero_fields": []
   },
   {
+    "id": "particle-ai/particle-1:free",
+    "name": "Particle AI: Particle-1 (free)",
+    "canonical_slug": "particle-ai/particle-1-20261027",
+    "created": 1793207893,
+    "context_length": 1048576,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
     "id": "recursive/flint-v1.0:free",
     "name": "Recursive: Flint (free)",
     "canonical_slug": "recursive/flint-v1.0-20261021",
@@ -385,27 +516,20 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "xingchen-agi/xing4.0-29b-a4b:free",
-    "name": "XingChen: Xing4.0 29B A4B (free)",
-    "canonical_slug": "xingchen-agi/xing4.0-29b-a4b-20261015",
-    "created": 1792177496,
-    "context_length": 262144,
+    "id": "thinkingmachines/inkling-2-small:free",
+    "name": "Thinking Machines: Inkling 2 Small (free)",
+    "canonical_slug": "thinkingmachines/inkling-2-small-20261107",
+    "created": 1794261847,
+    "context_length": 1048576,
     "supported_parameters": [
-      "frequency_penalty",
       "include_reasoning",
       "max_tokens",
-      "min_p",
-      "presence_penalty",
       "reasoning",
-      "repetition_penalty",
-      "response_format",
+      "reasoning_effort",
       "seed",
       "stop",
-      "structured_outputs",
       "temperature",
-      "tool_choice",
       "tools",
-      "top_k",
       "top_p"
     ],
     "pricing": {
@@ -413,8 +537,8 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 235929,
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
       "is_moderated": false
     },
     "is_free": true,
